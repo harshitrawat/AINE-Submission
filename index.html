@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>AINE Ai</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-size: 62.5%;
+            font-family: 'Courier New', Courier, monospace;
+            box-sizing: border-box;
+            background-color: #F4F5F7;
+        }
+        .sidebar{
+            width: 6rem;
+            height: 100vh;
+            border-right: .1rem solid #D9DADC;
+            box-shadow: .4rem 0 .9rem 0  #DBDCDE;
+            background-color: white;
+            z-index: 1;
+        }
+        .header{
+            height: 5rem;
+            width: 100vw;
+            background-color: white;
+            position: absolute;
+            top: 1rem;
+            z-index: -1;
+        }
+        .list{
+            position: absolute;
+            top: 3rem;
+            text-align: center;
+            left: .4rem;
+        }
+        .list-items{
+            font-size: .7rem;
+            list-style-type: none;
+            padding: .1rem;
+            margin-bottom: 3rem;
+        }
+        span{
+            display: block;
+        }
+        #para{
+            margin: 9rem 0 0 10rem;
+        }
+        .content{
+            position: absolute;
+            top: 0;
+
+        }
+        #para{
+            font-weight: bold;
+            color: #9AA6AE;
+            font-size: .8rem;
+        }
+        #image{
+            position: absolute;
+            margin: 7.9rem 0 0 7.7rem;
+        }
+        .select{
+            border-left: #85AEE1;
+
+        }
+        .insert{
+            position: absolute;
+            top: 12rem;
+            left: 20rem;
+            
+        }
+        .input{
+            width: 380%;
+            height: 1.2rem;
+            padding: .5rem;
+            border: none;
+            font-weight: bold;
+            outline: none;
+            border-radius: .5rem;
+            color: #9aa6ae;
+            background-color: #fafafa;
+        }
+        .upload{
+            height: 10rem;
+            width: 10rem;
+            border: none;
+            position: absolute;
+            top: 17rem;
+            left: 20rem;
+            background-color: #fafafa;
+
+        }
+        #para2{
+            margin: 5rem 3.5rem;
+            font-size: .8rem;
+            font-weight: bold;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+        .pacman{
+            width: 0px;
+            height: 0px;
+            border-radius: 15px;
+            border: 15px solid #8A8998;
+            border-top-color: transparent;
+            transform: rotate(135deg);
+            margin-bottom: 3rem;
+            margin-left: 1.5rem;
+        }
+        .half-circle{
+            width: 23px;
+            height: 46px;
+            border-bottom-left-radius: 100px;
+            border-top-left-radius: 100px;
+            border: 5px solid gray;
+            border-right: 0;
+            position: absolute;
+            top: -.5rem;
+            left: 1rem;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+        }
+        .quarter{
+            width: 30px;
+            height: 30px;
+            position: absolute;
+            
+            border-top-left-radius: 0;
+            border: 5px solid gray;
+            border-right: 0;
+            border-bottom-left-radius: 100px;
+            border-top: 0;
+            box-sizing: border-box;
+            bottom: 19.1rem;
+            left: .6rem;
+            
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="sidebar">
+        <div class="list">
+            <div class="pacman"></div>
+            <div class="half-circle"></div>
+            <div class="quarter"></div>
+            <li class="list-items"><a href="#"><img src="./1x/outline_person_black_24dp.png"><span>Student</span></a></li>
+            
+            <li class="list-items selected"><a href="#"><img src="./1x/outline_inventory_black_24dp.png"><span>Lesson Plan</span></a></li>
+            
+            <li class="list-items"><a href="#"><img src="./1x/outline_settings_black_24dp.png"><span>Settings</span></a></li>
+        </div>
+        <div class="header">
+        </div>
+    </div>
+    <div class="content">
+        <img id="image" src="./2x/round_arrow_left_black_24dp.png">
+        <p id="para">Videos</p>
+    </div>
+    <div class="insert">
+        <input type="text" placeholder="Insert URL here" class="input">
+    </div>
+    <div class="upload">
+        <p id="para2"><a href="#">Upload</a></p>
+    </div>
+    
+</body>
+</html>
